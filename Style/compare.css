@@ -61,6 +61,23 @@
 
 #compare-search1 {
   margin-right: 0.25rem;
+  background-color: transparent;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  border: 1px solid white;
+  border-radius: 20px;
+  color: white;
+}
+
+#compare-search2 {
+  background-color: transparent;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  border: 1px solid white;
+  border-radius: 20px;
+  color: white;
 }
 
 #compare-stats {
@@ -70,11 +87,6 @@
   /* align-items: center; */
   margin-top: 3rem;
   row-gap: 1.5rem;
-}
-
-#searchInput {
-  padding: 5px;
-  font-size: 16px;
 }
 
 .compare-bar {

@@ -90,7 +90,6 @@ a {
   margin-top: 1rem;
   font-size: 12px;
   border-collapse: collapse;
-  border: 1px solid white;
 }
 
 #tablee {
@@ -98,15 +97,15 @@ a {
   margin-top: 1rem;
   font-size: 12px;
   border-collapse: collapse;
-  border-bottom: 1px solid white;
 }
 
 .header-row {
-  border-bottom: 1px solid white;
+  border-bottom: 0.2px solid rgb(255, 255, 255, 0.4);
 }
 
 .header-roww {
   font-size: 12px;
+  border-bottom: 0.2px solid rgb(255, 255, 255, 0.4);
 }
 
 th {
@@ -115,21 +114,25 @@ th {
   padding-top: 10px;
 }
 
-table th:hover {
+/* table th:hover {
   background-color: transparent;
-}
+} */
 
 td {
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
   font-weight: 300;
-  border: 1px dashed white;
 }
 
 table tr:hover {
   background-color: rgba(255, 255, 255, 0.1);
   cursor: pointer;
+  border-radius: 20px;
+}
+
+table tbody td:first-child {
+  text-align: right;
 }
 
 .picture {
@@ -293,6 +296,8 @@ img {
   display: flex;
   justify-content: center;
   background-color: transparent;
+  margin-bottom: 2rem;
+  column-gap: 1rem;
 }
 
 .tableBtns {
@@ -300,6 +305,7 @@ img {
   color: white;
   padding: 0.5rem;
   border: 1px solid white;
+  border-radius: 15px;
 }
 
 #prev {
@@ -461,6 +467,11 @@ img {
   color: var(--green);
 }
 
+.totalsRowProfile td:last-child {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
 .picture.active {
   border: 3px solid var(--green);
 }
@@ -477,19 +488,21 @@ img {
 
 #searchResults {
   position: absolute;
-  background-color: #001327;
-  top: 100%;
+  top: 90%;
   left: 0;
   text-align: left;
   font-weight: 150;
+  background-color: rgba(104, 89, 150, 0.28);
+  backdrop-filter: blur(25px);
+  border-radius: 20px;
+  font-size: 12px;
 }
 
 .searchResultBox {
   display: flex;
-  border: 1px solid white;
-  padding: 5px;
-  background-color: #001327;
+  padding: 1rem;
   color: white;
+  align-items: center;
 }
 
 .player-result {
@@ -498,8 +511,8 @@ img {
 }
 
 .player-result-img {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   margin-right: 10px;
 }
