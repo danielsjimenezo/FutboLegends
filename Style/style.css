@@ -174,19 +174,22 @@ table tr > td:first-child {
 }
 
 .filter-menu {
-  min-width: 100px;
+  min-width: 150px;
+  max-height: 400px;
+  overflow-y: auto;
+  scrollbar-width: none;
 }
 
-#filter-menu {
+/* #filter-menu {
   position: absolute;
   background-color: #001327;
   top: 100%;
   right: 0;
   text-align: right;
   transition: all 250ms;
-}
+} */
 
-#filter-menu button {
+/* #filter-menu button {
   padding: 8px;
   background-color: transparent;
   border: 1px solid white;
@@ -196,7 +199,7 @@ table tr > td:first-child {
   width: 100%;
   cursor: pointer;
   transition: all 250ms;
-}
+} */
 
 #filter-menu > button:last-child {
   border-bottom: 1px solid white;
@@ -226,6 +229,30 @@ img {
   height: 25px;
 }
 
+.search-dropdown {
+  position: absolute;
+  top: 90%;
+  left: 0;
+  text-align: left;
+  font-weight: 150;
+  background-color: rgba(104, 89, 150, 0.28);
+  backdrop-filter: blur(25px);
+  border-radius: 20px;
+  font-size: 12px;
+
+  & button {
+    background: none;
+    border: 0;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  }
+}
+
 #globe-filter {
   background-color: transparent;
   border: 0;
@@ -238,16 +265,16 @@ img {
   z-index: 5;
 }
 
-#globe-filter-menu {
+/* #globe-filter-menu {
   position: absolute;
   background-color: #001327;
   top: 100%;
   right: 0;
   text-align: right;
   transition: all 250ms;
-}
+} */
 
-#globe-filter-menu button {
+/* #globe-filter-menu button {
   padding: 8px;
   background-color: transparent;
   border: 1px solid white;
@@ -257,7 +284,7 @@ img {
   width: 100%;
   cursor: pointer;
   transition: all 250ms;
-}
+} */
 
 #globe-filter-menu > button:last-child {
   border-bottom: 1px solid white;

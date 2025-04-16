@@ -48,17 +48,6 @@
   position: relative;
 }
 
-#compare-search-results1,
-#compare-search-results2 {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  max-height: 200px;
-  overflow-y: auto;
-}
-
 #compare-search1 {
   margin-right: 0.25rem;
   background-color: transparent;
