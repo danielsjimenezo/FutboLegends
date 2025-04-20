@@ -1,3 +1,5 @@
+//  npm create vite@latest ./
+
 import loadComponent from "../../components/loadComponents.js";
 await loadComponent("header", "header");
 import { fetchData } from "../Utilities/fetchData.js";
